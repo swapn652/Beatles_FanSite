@@ -3,8 +3,8 @@ import { useState } from 'react';
 export const Journey = () => {
   const [isLeftVisible1, setIsLeftVisible1] = useState(false)
   const [isLeftVisible2, setIsLeftVisible2] = useState(false)
-  const [isRightVisible1, setIsRightVisible1] = useState(false)
-  const [isRightVisible2, setIsRightVisible2] = useState(false)
+  const [isRightVisible1, setIsRightVisible1] = useState(true)
+  const [isRightVisible2, setIsRightVisible2] = useState(true)
 
   const handleLeftYearClick1 = () => {
     setIsLeftVisible1(!isLeftVisible1);

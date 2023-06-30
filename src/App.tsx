@@ -4,8 +4,7 @@ import Navbar from "./components/Navbar";
 
 import {
   BrowserRouter as Router,
-  Route,
-  Switch
+  Route
 } from 'react-router-dom'
 import { Journey } from "./components/Journey";
 
