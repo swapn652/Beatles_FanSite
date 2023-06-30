@@ -8,7 +8,7 @@ export default function Navbar() {
             <div className="flex items-center justify-between -mt-10 h-50">
               <div className="flex items-center">
                 <div className="flex-shrink-0">
-                  <img className="mt-10 md:h-24 lg:h-32 lg:w-60" src="src/assets/logo.jpeg" alt="Logo" />
+                  <img className="mt-10 md:h-24 lg:h-32 lg:w-60" src="/logo.jpeg" alt="Logo" />
                 </div>
                 <div className="hidden md:block">
                   <div className="mx-auto mt-12 flex items-baseline">
