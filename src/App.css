@@ -40,3 +40,15 @@
 .read-the-docs {
   color: #888;
 }
+
+#buttonChangeMode{
+  height: 40px;
+  width: 50px;
+    
+  position: relative;
+  top: -5.5%;
+  left: 10%;
+  background: none;
+  border: none;
+  cursor: pointer;
+}

@@ -39,11 +39,9 @@ export default function Navbar() {
               </div>
             </div>
             <div className="flex ">
-              <input
-                type="text"
-                placeholder="Search"
-                className="px-4 py-2 mt-14 border border-gray-300 rounded-md"
-              />
+            <button className="mode btn btn-outline-dark far fa-sun" type="button" id="buttonChangeMode"><i className="bi bi-brightness-high-fill" id="toggleDark"></i></button>
+
+          
               <a
                 href="https://github.com/swapn652/Beatles_FanSite"
                 target="_blank"
