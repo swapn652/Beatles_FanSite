@@ -38,12 +38,17 @@ export default function Navbar() {
                 </div>
               </div>
             </div>
+
+            <div>
+
             <div className="flex ">
+
               <input
                 type="text"
                 placeholder="Search"
                 className="px-4 py-2 mt-14 border border-gray-300 rounded-md"
               />
+
               <a
                 href="https://github.com/swapn652/Beatles_FanSite"
                 target="_blank"
@@ -64,6 +69,7 @@ export default function Navbar() {
                 </svg>
                 GitHub
               </a>
+
             </div>
           </div>
         </div>
