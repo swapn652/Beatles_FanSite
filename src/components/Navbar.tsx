@@ -70,7 +70,7 @@ export default function Navbar() {
               <div
                 className={`flex ${
                   navOpen ? 'sm:hidden' : 'hidden'
-                } flex-col absolute bg-white h-[100%] w-[15rem] p-5 right-0 top-[4.5rem]`}
+                } flex-col absolute bg-white h-[100%] w-[15rem] p-5 right-0 top-[4.5rem] z-50`}
               >
                 {/* <Link to='/'>yo</Link> */}
                 <Link
