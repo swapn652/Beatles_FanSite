@@ -14,6 +14,6 @@ const MemberCard = (props: CardProps) => {
       </div>
     </div>
   );
-};
+}
 
 export default MemberCard
