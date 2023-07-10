@@ -1,54 +1,64 @@
+import { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { ThemeContext } from '../ThemeContext';
+import { MoonIcon, SunIcon } from './ThemeIcons';
 
 export default function Navbar() {
+  const { isDarkMode, toggleTheme } = useContext(ThemeContext);
+
   return (
     <>
-      <nav className="bg-white ">
+      <nav className="bg-white dark:bg-zinc-900">
         <div className="w-full mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between -mt-10 h-50">
             <div className="flex items-center">
               <div className="flex-shrink-0">
                 <img
-                  className="mt-10 md:h-24 lg:h-32 lg:w-60"
-                  src="/logo.jpeg"
+                  className="mt-10 h-14 md:h-24 lg:h-32 lg:w-60 dark:bg-zinc-900"
+                  src={isDarkMode ? '/darkLogo.jpg' : '/logo.jpeg'}
                   alt="Logo"
                 />
               </div>
               <div className="hidden md:block">
-                <div className="mx-auto mt-12 flex items-baseline">
+                <div className="text-gray-600 dark:text-gray-100 hover:text-zinc-900 dark:hover:text-gray-300 mx-auto mt-12 flex items-baseline">
                   {/* <Link to='/'>yo</Link> */}
                   <Link
                     to="/"
-                    className="text-gray-600 hover:text-gray-800 px-8 py-2 rounded-md md:text-xl lg:text-2xl"
+                    className=" px-8 py-2 rounded-md md:text-xl lg:text-2xl"
                   >
                     Home
                   </Link>
                   <Link
                     to="/albums"
-                    className="text-gray-600 hover:text-gray-800 px-8 py-2 rounded-md md:text-xl lg:text-2xl"
+                    className="px-8 py-2 rounded-md md:text-xl lg:text-2xl"
                   >
                     Albums
                   </Link>
                   <Link
                     to="/journey"
-                    className="text-gray-600 hover:text-gray-800 px-8 py-2 rounded-md md:text-xl lg:text-2xl"
+                    className="px-8 py-2 rounded-md md:text-xl lg:text-2xl"
                   >
                     Journey
                   </Link>
                 </div>
               </div>
             </div>
-            <div className="flex ">
-              <input
-                type="text"
-                placeholder="Search"
-                className="px-4 py-2 mt-14 border border-gray-300 rounded-md"
-              />
+
+            <div className="flex items-center">
+              <button
+                className="w-10 h-auto pt-14 pr-[4rem] focus:outline-none"
+                onClick={toggleTheme}
+                aria-label="Toggle Theme"
+                aria-controls="dark-mode"
+              >
+                {isDarkMode ? <MoonIcon /> : <SunIcon />}
+              </button>
+              
               <a
                 href="https://github.com/swapn652/Beatles_FanSite"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-600 hover:text-gray-800 px-4 mt-14 rounded-md flex items-center text-sm sm:text-xl lg:text-2xl"
+                className="px-4 mt-14 rounded-md flex items-center text-sm sm:text-xl lg:text-2xl dark:text-gray-100"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

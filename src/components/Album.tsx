@@ -15,7 +15,7 @@ const Album = (props: AlbumProps) => {
             <div className='text-white text-sm mt-2'>{props.date}</div>   
         </div>
     </div>
-  )
+  );
 }
 
 export default Album
