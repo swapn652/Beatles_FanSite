@@ -14,7 +14,7 @@ export default function Navbar() {
             <div className="flex items-center">
               <div className="flex-shrink-0">
                 <img
-                  className="mt-10 md:h-24 lg:h-32 lg:w-60 dark:bg-zinc-900"
+                  className="mt-10 h-14 md:h-24 lg:h-32 lg:w-60 dark:bg-zinc-900"
                   src={isDarkMode ? '/darkLogo.jpg' : '/logo.jpeg'}
                   alt="Logo"
                 />
